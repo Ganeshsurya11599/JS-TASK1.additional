@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="css/java.css">
+ 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ </head>
+ <body style="background-image:url(img/bg2.jpg);">
+ 		<div class="login-page">
+ 		<div class="form">
+ 			<form class="register-form">
+ 				<input type="text" placeholder="Department" id="department1">
+ 				<input type="text" placeholder="Year Of Passing" id="yearofpassing1">
+ 				<input type="text" placeholder="Percentage" id="percentage1">
+				<button type="button" class="btn btn-primary text-dark" onclick="myFunction()">Submit</button>
+ 				<p class="message"><a href="java.html">Go To Home</a></p>
+ 			</form>
+ 		</div>	
+ 	</div>
+ 	<script>
+ 		function myFunction(){
+			department1 = document.getElementById("department1").value;
+			yearofpassing1 = document.getElementById("yearofpassing1").value;
+			percentage1 = document.getElementById("percentage1").value;
+			var details3 = {
+			PG:{
+				department1:department1,
+				yearofpassing1:yearofpassing1,
+				percentage1:percentage1,
+		}
+	}
+ 		console.log(details3)
+		window.alert('Register Successfully')
+ 	}
+ 	</script>
+ </body>
+ </html>

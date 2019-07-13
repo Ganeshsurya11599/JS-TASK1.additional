@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="css/java.css">
+ 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ </head>
+ <body style="background-image:url(img/bg2.jpg);">
+ 	<div class="login-page">
+ 		<div class="form">
+ 			<form class="register-form">
+ 				<input type="text" placeholder="Name" id="name">
+ 				<input type="text" placeholder="E-mail Id" id="email">
+ 				<input type="text" placeholder="Phone No" id="phone">
+				<button type="button" onclick="myFunction()">Submit</button>
+ 				<p class="message">Register a UG marks<a href="java1.html">Go To</a></p>
+ 			</form>
+ 		</div>
+ 	</div>
+ 	<script>
+ 		function myFunction(){
+ 			name=document.getElementById('name').value;
+ 			email = document.getElementById("email").value;
+			phone = document.getElementById("phone").value;
+			var details1 = {
+			name : name,
+			email : email,
+			phone : phone,
+	}
+		console.log(details1)
+		window.alert('Register Successfully')
+	}
+ 	</script>
+ </body>
+ </html>
